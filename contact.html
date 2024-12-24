@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>หน้าติดต่อ</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <img src="https://i.gifer.com/1uK8.gif" alt="โลโก้" class="logo"> <!-- เพิ่มรูปโลโก้ -->
+        <nav>
+            <ul>
+                <li><a href="index.html" class="active">หน้าหลัก</a></li>
+                <li><a href="about.html" class="active">รายละเอียดสถานที่ท่องเที่ยว</a></li>
+                <li><a href="contact.html" class="active">ติดต่อ</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main role="main">
+        <section class="message">
+            <h2>ส่งข้อความถึงเรา</h2>
+            <form action="/submit" method="POST" role="form" aria-label="แบบฟอร์มติดต่อ">
+                <table>
+                    <tr>
+                        <td><label for="fullname">ชื่อ-นามสกุล *</label></td>
+                        <td>
+                            <input type="text" id="fullname" name="fullname" required aria-required="true" minlength="2" maxlength="100" aria-describedby="fullname-help" />
+                            <small id="fullname-help">กรุณากรอกชื่อและนามสกุลจริง</small>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><label for="email">อีเมล *</label></td>
+                        <td>
+                            <input type="email" id="email" name="email" required aria-required="true" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" aria-describedby="email-help" />
+                            <small id="email-help">ตัวอย่าง: example@domain.com</small>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><label for="tel">เบอร์โทรศัพท์</label></td>
+                        <td>
+                            <input type="tel" id="tel" name="tel" pattern="[0-9]{10}" aria-describedby="tel-help" />
+                            <small id="tel-help">กรอกหมายเลข 10 หลัก ไม่ต้องมีขีด เช่น 0812345678</small>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><label for="message">ข้อความ *</label></td>
+                        <td>
+                            <textarea id="message" name="message" required aria-required="true" minlength="10" rows="5" aria-describedby="message-help"></textarea>
+                            <small id="message-help">กรุณากรอกข้อความอย่างน้อย 10 ตัวอักษร</small>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2" style="text-align: center;">
+                            <button type="submit" aria-label="ส่งข้อความ">ส่งข้อความ</button>
+                        </td>
+                    </tr>
+                </table>
+            </form>
+        </section>
+        
+        
+    </main>
+
+    <footer>
+        <section>
+            <h2>ติดต่อ</h2>
+            <div class="contact">
+                <p>
+                    Email : 66160253@go.buu.ac.th
+                    <br> Phone : 0930849148
+                    <br> Ig : p_yeonaaee
+                </p>
+            </div>
+        </section>
+        <p>&copy; 2024 จังหวัดน่าเที่ยว | 66160253 Pathamaporn W.</p>
+    </footer>
+</body>
+</html>
