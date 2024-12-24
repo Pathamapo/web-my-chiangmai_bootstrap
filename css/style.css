@@ -383,3 +383,37 @@ header form button:hover {
         margin-top: 10px; 
     }
 }
+.carousel-item img {
+    height: 500px; 
+    object-fit: cover; 
+}
+
+
+.carousel-caption {
+    background-color: rgba(197, 119, 188, 0.5); 
+    color: white;
+    padding: 15px;
+    border-radius: 5px;
+}
+
+.carousel-caption h5 {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.carousel-caption p {
+    font-size: 1.2rem;
+}
+
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: rgba(0, 0, 0, 0.5); 
+}
+
+
+.carousel-control-prev,
+.carousel-control-next {
+    background-color: rgba(247, 184, 229, 0.251); 
+}
