@@ -9,13 +9,19 @@
 <body>
     <header>
         <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/%E0%B8%95%E0%B8%A3%E0%B8%B2%E0%B8%9C%E0%B9%89%E0%B8%B2%E0%B8%9C%E0%B8%B9%E0%B8%81%E0%B8%84%E0%B8%AD%E0%B8%A5%E0%B8%B9%E0%B8%81%E0%B9%80%E0%B8%AA%E0%B8%B7%E0%B8%AD%E0%B8%9B%E0%B8%A3%E0%B8%B0%E0%B8%88%E0%B8%B3%E0%B8%88%E0%B8%B1%E0%B8%87%E0%B8%AB%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B9%80%E0%B8%8A%E0%B8%B5%E0%B8%A2%E0%B8%87%E0%B9%83%E0%B8%AB%E0%B8%A1%E0%B9%88.png/2048px-%E0%B8%95%E0%B8%A3%E0%B8%B2%E0%B8%9C%E0%B9%89%E0%B8%B2%E0%B8%9C%E0%B8%B9%E0%B8%81%E0%B8%84%E0%B8%AD%E0%B8%A5%E0%B8%B9%E0%B8%81%E0%B9%80%E0%B8%AA%E0%B8%B7%E0%B8%AD%E0%B8%9B%E0%B8%A3%E0%B8%B0%E0%B8%88%E0%B8%B3%E0%B8%88%E0%B8%B1%E0%B8%87%E0%B8%AB%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B9%80%E0%B8%8A%E0%B8%B5%E0%B8%A2%E0%B8%87%E0%B9%83%E0%B8%AB%E0%B8%A1%E0%B9%88.png" alt="โลโก้" class="logo">
-        <nav>
-            <ul>
-                <li><a href="index.html" class="active">หน้าหลัก</a></li>
-                <li><a href="about.html"class="active">รายละเอียดสถานที่ท่องเที่ยว</a></li>
-                <li><a href="contact.html"class="active">ติดต่อ</a></li>
-            </ul>
-        </nav>
+        <form action="/search" method="GET" style="display: inline-block;">
+            <input type="text" name="query" placeholder="ค้นหาสถานที่..." required>
+            <button type="submit">ค้นหา</button>
+        </form>
+
+        <div class="hamburger-menu" onclick="toggleMenu()">&#9776;</div>
+    <nav id="navMenu">
+        <ul>
+            <li><a href="index.html" class="active">หน้าหลัก</a></li>
+            <li><a href="about.html" class="active">รายละเอียดสถานที่ท่องเที่ยว</a></li>
+            <li><a href="contact.html" class="active">ติดต่อ</a></li>
+        </ul>
+    </nav>
     </header>
 <body>
     <main>
@@ -50,6 +56,6 @@
     <footer>
         <p>&copy; 2024 จังหวัดน่าเที่ยว | 66160253 Pathamaporn W.</p>
     </footer>
-    
+    <script src="script.js"></script>
 </body>
 </html>

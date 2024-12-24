@@ -59,6 +59,8 @@ header nav ul li:hover {
     transition: background-color 0.3s ease; /* เพิ่ม transition */
 }
 
+
+
 main {
     padding: 2rem;
     max-width: 900px;
@@ -272,3 +274,58 @@ h2 {
     grid-template-columns: 1fr;
     }
    }
+
+   /* สไตล์สำหรับ Hamburger Menu */
+.hamburger-menu {
+    font-size: 30px;
+    display: none;
+    cursor: pointer;
+}
+
+/* ซ่อนเมนูนำทางบนหน้าจอเล็ก */
+#navMenu {
+    display: flex;
+    justify-content: space-around;
+}
+
+/* แสดง Hamburger เมนูเมื่อหน้าจอเล็กลง */
+@media (max-width: 768px) {
+    #navMenu {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 55px;
+        left: 0;
+        width: 100%;
+        background-color: #ffa0db;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .hamburger-menu {
+        display: block;
+        position: absolute;
+        top: 9px;
+        right: 15px;
+    }
+
+    #navMenu.active {
+        display: flex;
+    }
+
+    #navMenu ul {
+        width: 100%;
+        padding: 0;
+        margin: 0;
+        list-style-type: none;
+        text-align: center;
+    }
+
+    #navMenu ul li {
+        padding: 10px 0;
+    }
+
+    #navMenu ul li a {
+        text-decoration: none;
+        color: #ffffff;
+    }
+}
