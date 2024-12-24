@@ -329,3 +329,57 @@ h2 {
         color: #ffffff;
     }
 }
+
+
+header form {
+    display: flex; 
+    align-items: center; 
+    background-color: #f1f1f1; 
+    padding: 8px 15px; 
+    border-radius: 30px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+}
+
+
+header form input {
+    padding: 10px 15px; 
+    font-size: 16px;
+    border: 1px solid #ccc; 
+    border-radius: 20px; 
+    width: 650px; 
+    margin-right: 10px;
+    transition: all 0.3s ease; 
+}
+
+
+header form input:focus {
+    border-color: #a48df9;
+    outline: none;
+}
+
+
+header form button {
+    padding: 10px 20px;
+    font-size: 16px; 
+    background-color: #a68aed;
+    color: white; 
+    border: none; 
+    border-radius: 20px; 
+    cursor: pointer; 
+    transition: background-color 0.3s ease; 
+}
+
+header form button:hover {
+    background-color: #7f82d4;
+}
+
+@media (max-width: 768px) {
+    header form {
+        flex-direction: column; 
+        width: 90%; 
+    }
+
+    header form button {
+        margin-top: 10px; 
+    }
+}
