@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>หน้าแรก - เที่ยวเชียงใหม่ปี 2567</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+   <style>
+        body {
+            background-color: #ffceed;
+        }
+        header, footer {
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .carousel-inner img {
+            height: 450px;
+            object-fit: cover;
+        }
+    </style>
+</head>
+<body>
+    <header class="text-white py-3" style="background-color: #FF69B4;">
+        <div class="container d-flex justify-content-between align-items-center">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/%E0%B8%95%E0%B8%A3%E0%B8%B2%E0%B8%9C%E0%B9%89%E0%B8%B2%E0%B8%9C%E0%B8%B9%E0%B8%81%E0%B8%84%E0%B8%AD%E0%B8%A5%E0%B8%B9%E0%B8%81%E0%B9%80%E0%B8%AA%E0%B8%B7%E0%B8%AD%E0%B8%9B%E0%B8%A3%E0%B8%B0%E0%B8%88%E0%B8%B3%E0%B8%88%E0%B8%B1%E0%B8%87%E0%B8%AB%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B9%80%E0%B8%8A%E0%B8%B5%E0%B8%A2%E0%B8%87%E0%B9%83%E0%B8%AB%E0%B8%A1%E0%B9%88.png/900px-%E0%B8%95%E0%B8%A3%E0%B8%B2%E0%B8%9C%E0%B9%89%E0%B8%B2%E0%B8%9C%E0%B8%B9%E0%B8%81%E0%B8%84%E0%B8%AD%E0%B8%A5%E0%B8%B9%E0%B8%81%E0%B9%80%E0%B8%AA%E0%B8%B7%E0%B8%AD%E0%B8%9B%E0%B8%A3%E0%B8%B0%E0%B8%88%E0%B8%B3%E0%B8%88%E0%B8%B1%E0%B8%87%E0%B8%AB%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B9%80%E0%B8%8A%E0%B8%B5%E0%B8%A2%E0%B8%87%E0%B9%83%E0%B8%AB%E0%B8%A1%E0%B9%88.png"
+            alt="โลโก้" class="rounded-circle ms-0" width="100">
+            <form action="/search" method="GET" class="d-flex justify-content-center align-items-center">
+                <div class="input-group w-100 w-md-auto">
+                    <input type="text" name="query" placeholder="ค้นหา..." class="form-control rounded-start" required>
+                    <button type="submit" class="btn btn-purple rounded-end">ค้นหา</button>
+                </div>
+            </form>
+            
+
+            <style>
+                .btn-purple {
+                    background-color: #8a2be2; 
+                    color: white; 
+                }
+            
+                .btn-purple:hover {
+                    background-color: #6a1b9a; 
+                }
+            </style>
+            
+            
+            <nav class="navbar navbar-expand-lg navbar-light bg-pink shadow-sm mt-3">
+                <div class="container">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu" aria-controls="navMenu" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse justify-content-end" id="navMenu">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a href="index.html" class="nav-link text-dark fw-bold px-4 py-2 bg-light rounded-pill transition-all duration-300 hover-effect">หน้าหลัก</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="about.html" class="nav-link text-dark fw-bold px-4 py-2 bg-light rounded-pill transition-all duration-300 hover-effect">รายละเอียดสถานที่ท่องเที่ยว</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="contact.html" class="nav-link text-dark fw-bold px-4 py-2 bg-light rounded-pill transition-all duration-300 hover-effect">ติดต่อ</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            
+            <style>
+                .bg-pink {
+                    background-color: #FF69B4; 
+                }
+            
+                .hover-effect:hover {
+                    background-color: #ff1493; 
+                    color: white; 
+                    transform: scale(1.1); 
+                    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); 
+                }
+            
+                .transition-all {
+                    transition: all 0.3s ease;
+                }
+            
+                .navbar-nav .nav-item .nav-link {
+                    font-size: 1rem; 
+                }
+            </style>
+            
+    </header>
+    <body>
+        <div id="carouselExample" class="carousel slide carousel-fade mt-3" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="https://s359.kapook.com/pagebuilder/7252a2d7-4350-4c79-97a4-b59d66981800.jpg" class="d-block w-100" alt="Slide 1">
+                    <div class="carousel-caption d-none d-md-block text-center">
+                        <h5 class="display-4 text-shadow">ยี่เป็งล้านนา</h5>
+                        <p class="lead">ประเพณีที่น่าสนใจในจังหวัดเชียงใหม่</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="https://image.kkday.com/v2/image/get/h_650%2Cc_fit/s1.kkday.com/product_151451/20230906073532_owylI/jpg" class="d-block w-100" alt="Slide 2">
+                    <div class="carousel-caption d-none d-md-block text-center">
+                        <h5 class="display-4 text-shadow">ยี่เป็งล้านนา</h5>
+                        <p class="lead">ประเพณีที่น่าสนใจในจังหวัดเชียงใหม่</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="https://image.kkday.com/v2/image/get/h_650%2Cc_fit/s1.kkday.com/product_132387/20240304090904_rqwkQ/jpg" class="d-block w-100" alt="Slide 3">
+                    <div class="carousel-caption d-none d-md-block text-center">
+                        <h5 class="display-4 text-shadow">ยี่เป็งล้านนา</h5>
+                        <p class="lead">ประเพณีที่น่าสนใจในจังหวัดเชียงใหม่</p>
+                    </div>
+                </div>
+            </div>
+            <style>
+                .carousel-control-prev, .carousel-control-next {
+                    background-color: #FF69B4; 
+                }
+                .carousel-control-prev-icon, .carousel-control-next-icon {
+                    filter: invert(1);
+                }
+            </style>
+            
+            <button class="carousel-control-prev text-white" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            
+            <button class="carousel-control-next text-white" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+        <div class="d-flex justify-content-center align-items-start min-vh-100 mt-4">
+            <button type="button" class="btn btn-success btn-custom" data-bs-toggle="modal" data-bs-target="#contactModal">
+                ส่งข้อความถึงเรา
+            </button>
+
+        </div>
+        
+        
+    
+
+        <div class="modal fade" id="contactModal" tabindex="-1" aria-labelledby="contactModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="contactModalLabel">ฟอร์มติดต่อ</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <form action="/submit" method="POST" aria-label="แบบฟอร์มติดต่อ">
+                            <div class="mb-3">
+                                <label for="fullname" class="form-label">ชื่อ-นามสกุล *</label>
+                                <input type="text" class="form-control" id="fullname" name="fullname" required minlength="2" maxlength="100">
+                                <small class="form-text text-muted">กรุณากรอกชื่อและนามสกุลจริง</small>
+                            </div>
+                            <div class="mb-3">
+                                <label for="email" class="form-label">อีเมล *</label>
+                                <input type="email" class="form-control" id="email" name="email" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$">
+                                <small class="form-text text-muted">ตัวอย่าง: example@domain.com</small>
+                            </div>
+                            <div class="mb-3">
+                                <label for="tel" class="form-label">เบอร์โทรศัพท์</label>
+                                <input type="tel" class="form-control" id="tel" name="tel" pattern="[0-9]{10}">
+                                <small class="form-text text-muted">กรอกหมายเลข 10 หลัก ไม่ต้องมีขีด เช่น 0812345678</small>
+                            </div>
+                            <div class="mb-3">
+                                <label for="message" class="form-label">ข้อความ *</label>
+                                <textarea class="form-control" id="message" name="message" rows="4" required minlength="10"></textarea>
+                                <small class="form-text text-muted">กรุณากรอกข้อความอย่างน้อย 10 ตัวอักษร</small>
+                            </div>
+                            <button type="submit" class="btn btn-primary w-100">ส่งข้อความ</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <style>
+            .btn-custom {
+                border-radius: 30px; 
+                padding: 18px 30px;
+                transition: transform 0.3s ease, background-color 0.3s ease;
+            }
+        
+            .btn-custom:hover {
+                background-color: #218838; 
+                transform: scale(1.05); 
+            }
+        </style>
+        
+        <footer class="mt-5" style="background-color: #FF69B4; color: white; padding: 40px 0;">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-3">
+                        <h5 class="font-weight-bold mb-3">ข้อมูลติดต่อ</h5>
+                        <ul class="list-unstyled">
+                            <li>อีเมล: 66160253@go.buu.ac.th</li>
+                            <li>โทร: 061-157-7211</li>
+                            <li>ที่อยู่: 477 บางแสนสุขมากอิอิ</li>
+                        </ul>
+                    </div>
+        
+                    <div class="col-md-3">
+                        <h5 class="font-weight-bold mb-3">ลิงก์สำคัญ</h5>
+                        <ul class="list-unstyled">
+                            <li><a href="#" class="text-white text-decoration-none">หน้าแรก</a></li>
+                            <li><a href="#about" class="text-white text-decoration-none">รายละเอียดสถานที่ท่องเที่ยว</a></li>
+                            <li><a href="#contact" class="text-white text-decoration-none">ติดตามเรา</a></li>
+                        </ul>
+                    </div>
+        
+                    <div class="col-md-3">
+                        <h5 class="font-weight-bold mb-3">ติดตามเรา</h5>
+                        <div class="d-flex">
+                            <a href="#" class="text-white text-decoration-none me-4">Twitter</a>
+                            <a href="#" class="text-white text-decoration-none me-4">Facebook</a>
+                            <a href="#" class="text-white text-decoration-none">Instagram</a>
+                        </div>
+                    </div>
+        
+                    <div class="col-md-3 text-center text-md-end">
+                        <p class="mb-0">&copy; 2024 จังหวัดน่าเที่ยว | 66160253 Pathamaporn W.</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="script.js"></script>
+    </body>
+    </html>

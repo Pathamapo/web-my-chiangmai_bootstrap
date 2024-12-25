@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>หน้ารายละเอียด - เที่ยวเชียงใหม่ปี 2567</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        body {
+            background-color: #ffceed;
+        }
+        header, footer {
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .carousel-inner img {
+            height: 450px;
+            object-fit: cover;
+        }
+    </style>
+</head>
+    <body>
+        <header class="text-white py-3" style="background-color: #FF69B4;">
+            <div class="container d-flex justify-content-between align-items-center">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/%E0%B8%95%E0%B8%A3%E0%B8%B2%E0%B8%9C%E0%B9%89%E0%B8%B2%E0%B8%9C%E0%B8%B9%E0%B8%81%E0%B8%84%E0%B8%AD%E0%B8%A5%E0%B8%B9%E0%B8%81%E0%B9%80%E0%B8%AA%E0%B8%B7%E0%B8%AD%E0%B8%9B%E0%B8%A3%E0%B8%B0%E0%B8%88%E0%B8%B3%E0%B8%88%E0%B8%B1%E0%B8%87%E0%B8%AB%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B9%80%E0%B8%8A%E0%B8%B5%E0%B8%A2%E0%B8%87%E0%B9%83%E0%B8%AB%E0%B8%A1%E0%B9%88.png/900px-%E0%B8%95%E0%B8%A3%E0%B8%B2%E0%B8%9C%E0%B9%89%E0%B8%B2%E0%B8%9C%E0%B8%B9%E0%B8%81%E0%B8%84%E0%B8%AD%E0%B8%A5%E0%B8%B9%E0%B8%81%E0%B9%80%E0%B8%AA%E0%B8%B7%E0%B8%AD%E0%B8%9B%E0%B8%A3%E0%B8%B0%E0%B8%88%E0%B8%B3%E0%B8%88%E0%B8%B1%E0%B8%87%E0%B8%AB%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B9%80%E0%B8%8A%E0%B8%B5%E0%B8%A2%E0%B8%87%E0%B9%83%E0%B8%AB%E0%B8%A1%E0%B9%88.png"
+                alt="โลโก้" class="rounded-circle ms-0" width="100">
+                <form action="/search" method="GET" class="d-flex justify-content-center align-items-center">
+                    <div class="input-group w-100 w-md-auto">
+                        <input type="text" name="query" placeholder="ค้นหา..." class="form-control rounded-start" required>
+                        <button type="submit" class="btn btn-purple rounded-end">ค้นหา</button>
+                    </div>
+                </form>
+                
+                <style>
+                    .btn-purple {
+                        background-color: #8a2be2;
+                        color: white;
+                    }
+                
+                    .btn-purple:hover {
+                        background-color: #6a1b9a;
+                    }
+                </style>
+                
+                <nav class="navbar navbar-expand-lg navbar-light bg-pink shadow-sm mt-3">
+                    <div class="container">
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu" aria-controls="navMenu" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse justify-content-end" id="navMenu">
+                            <ul class="navbar-nav">
+                                <li class="nav-item">
+                                    <a href="index.html" class="nav-link text-dark fw-bold px-4 py-2 bg-light rounded-pill transition-all duration-300 hover-effect">หน้าหลัก</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="about.html" class="nav-link text-dark fw-bold px-4 py-2 bg-light rounded-pill transition-all duration-300 hover-effect">รายละเอียดสถานที่ท่องเที่ยว</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="contact.html" class="nav-link text-dark fw-bold px-4 py-2 bg-light rounded-pill transition-all duration-300 hover-effect">ติดต่อ</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+                
+                <style>
+                    .bg-pink {
+                        background-color: #FF69B4; 
+                    }
+                
+                    .hover-effect:hover {
+                        background-color: #ff1493; 
+                        color: white; 
+                        transform: scale(1.1); 
+                        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); 
+                    }
+                
+                    .transition-all {
+                        transition: all 0.3s ease;
+                    }
+                
+                    .navbar-nav .nav-item .nav-link {
+                        font-size: 1rem; 
+                    }
+                </style>
+        </header>
+
+    <main class="py-5">
+        <h1 class="text-center text-dark font-weight-bold mb-4 animate__animated animate__shakeX animate__infinite animate__slow">
+            10 สถานที่ท่องเที่ยวในจังหวัดเชียงใหม่
+        </h1>
+        <img src="https://i.gifer.com/1uK8.gif" alt="แอนิเมชันที่เกี่ยวข้อง1" class="tourism-gif d-block mx-auto">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    </main>
+    <main> 
+        <section class="tourist-spots">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-3 col-md-6 col-sm-12 mb-4">
+                        <div class="card">
+                            <img src="https://www.chillpainai.com/src/wewakeup/scoop/images/2b95fcd4c02be63844d0d3f8425df81b9df8a802.jpg" alt="คลองแม่ข่า" class="card-img-top">
+                            <div class="card-body">
+                                <h5 class="card-title">คลองแม่ข่า</h5>
+                                <p class="highlight-text">ที่เที่ยวเชียงใหม่กำลังฮิตในหมู่นักท่องเที่ยว บรรยากาศที่คล้ายกับริมคลองญี่ปุ่น แนะนำให้มาเดินช่วงเย็นๆ อากาศกำลังดี ให้เพลิดเพลินตลอดเส้นทางอีกด้วย</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6 col-sm-12 mb-4">
+                        <div class="card">
+                            <img src="https://www.chillpainai.com/src/wewakeup/scoop/images/104090d1e72f96649ea64023e133dfc38d40d86c.jpg" alt="ประตูท่าแพ" class="card-img-top">
+                            <div class="card-body">
+                                <h5 class="card-title">ประตูท่าแพ</h5>
+                                <p class="highlight-text">ประตูนี้ถือเป็นโบราณสถานคู่เมืองเชียงใหม่เพื่อบ่งบอกพื้นที่ของตัวเมืองเชียงใหม่ชั้นในในสมัยก่อน แวะมาถ่ายรูปแล้วสามารถเดินเที่ยวรอบๆ เพราะเต็มไปด้วยร้านขายของและคาเฟ่น่ารักๆ มากมาย</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6 col-sm-12 mb-4">
+                        <div class="card">
+                            <img src="https://blog.drivehub.co/wp-content/uploads/2023/03/5.-%E0%B8%A7%E0%B8%B1%E0%B8%99-%E0%B8%99%E0%B8%B4%E0%B8%A1%E0%B8%A1%E0%B8%B2%E0%B8%99-One-Nimman-1536x864.jpg" alt="One Nimman" class="card-img-top">
+                            <div class="card-body">
+                                <h5 class="card-title">วัน นิมมาน (One Nimman)</h5>
+                                <p class="highlight-text">แลนด์มาร์คยอดฮิตย่านนิมมาน แหล่งรวมความชิคที่ผสมผสานอัตลักษณ์ท้องถิ่นเชียงใหม่ไว้ได้อย่างลงตัว เต็มไปด้วยมุมถ่ายรูปสวยๆ ให้ถ่ายกันได้อย่างเพลิดเพลินเลย</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6 col-sm-12 mb-4">
+                        <div class="card">
+                            <img src="https://blog.drivehub.co/wp-content/uploads/2023/03/6.-%E0%B8%AD%E0%B9%88%E0%B8%B2%E0%B8%87%E0%B9%81%E0%B8%81%E0%B9%89%E0%B8%A7-Ang-Kaew-Reservoir-1536x864.jpg" alt="อ่างแก้ว" class="card-img-top">
+                            <div class="card-body">
+                                <h5 class="card-title">อ่างแก้ว</h5>
+                                <p>พิกัดฮิตของเหล่าวัยรุ่นเชียงใหม่ และนักท่องเที่ยวต่างชาติ ที่นิยมเดินทางมาพักผ่อน นั่งชิลชมธรรมชาติยามเย็นกัน โดยอ่างแก้วแห่งนี้ตั้งอยู่ภายในบริเวณของมหาวิทยาลัยเชียงใหม่</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6 col-sm-12 mb-4">
+                        <div class="card">
+                            <img src="https://www.chillpainai.com/src/wewakeup/img_travel/467/cm-242.jpg" alt="สวนสัตว์เชียงใหม่" class="card-img-top">
+                            <div class="card-body">
+                                <h5 class="card-title">สวนสัตว์เชียงใหม่</h5>
+                                <p>สวนสัตว์ขนาดใหญ่ที่รวบรวมสัตว์นานาชนิดไว้มากมาย แบ่งเป็นหลายโซนให้ได้เที่ยวตะลอนกันอย่างเต็มที่ รับประกันว่าตื่นเต้นสุดๆ</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6 col-sm-12 mb-4">
+                        <div class="card">
+                            <img src="https://blog.drivehub.co/wp-content/uploads/2023/03/15.-%E0%B9%81%E0%B8%81%E0%B8%A3%E0%B8%99%E0%B8%94%E0%B9%8C-%E0%B9%81%E0%B8%84%E0%B8%99%E0%B8%A2%E0%B8%AD%E0%B8%99-%E0%B8%AB%E0%B8%B2%E0%B8%87%E0%B8%94%E0%B8%87-Grand-Canyon-Chiang-Mai-1536x864.jpg" alt="Grand Canyon Chiang Mai" class="card-img-top">
+                            <div class="card-body">
+                                <h5 class="card-title">Grand Canyon Chiang Mai</h5>
+                                <p>ที่เที่ยวสไตล์ธรรมชาติเอาใจคนชอบเที่ยวลุยๆ กับแกรนด์ แคนยอน จะแวะมาเดินเล่น ชมวิวถ่ายรูป หรือเล่นน้ำดับร้อน</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-12 mb-4">
+                        <div class="card">
+                            <img src="https://blog.drivehub.co/wp-content/uploads/2023/03/16.-%E0%B8%A1%E0%B9%88%E0%B8%AD%E0%B8%99%E0%B9%81%E0%B8%88%E0%B9%88%E0%B8%A1-Mon-Jam-1536x864.jpg" alt="ม่อนแจ่ม" class="card-img-top">
+                            <div class="card-body">
+                                <h5 class="card-title">ม่อนแจ่ม</h5>
+                                <p>ที่เที่ยวสำหรับชมวิวและธรรมชาติสุดฮิตเมื่อมาเที่ยวเชียงใหม่ ใช้เวลาขับรถจากตัวเมืองไม่นาน ได้พบกับทัศนียภาพของภูเขาที่โอบล้อมตัวเรา</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-12 mb-4">
+                        <div class="card">
+                            <img src="https://blog.drivehub.co/wp-content/uploads/2023/03/17.-%E0%B8%94%E0%B8%AD%E0%B8%A2%E0%B8%AD%E0%B8%B4%E0%B8%99%E0%B8%97%E0%B8%99%E0%B8%99%E0%B8%97%E0%B9%8C-Doi-Inthanon-1536x864.jpg" alt="ดอยอินทนนท์" class="card-img-top">
+                            <div class="card-body">
+                                <h5 class="card-title">ดอยอินทนนท์</h5>
+                                <p>ยอดเขาที่สูงที่สุดของไทย ไม่ว่าจะมาในฤดูไหน ก็จะได้พบกับอากาศเย็นสบายตลอดทั้งปี</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-12 mb-4">
+                        <div class="card">
+                            <img src="https://blog.drivehub.co/wp-content/uploads/2023/03/18.-%E0%B9%81%E0%B8%A1%E0%B9%88%E0%B8%81%E0%B8%B3%E0%B8%9B%E0%B8%AD%E0%B8%87-Mae-Kampong-Village-1536x864.jpg" alt="แม่กำปอง" class="card-img-top">
+                            <div class="card-body">
+                                <h5 class="card-title">แม่กำปอง</h5>
+                                <p>หมู่บ้านเล็กๆ ที่ซ่อนตัวอยู่ในหุบเขา เต็มไปด้วยความสงบและวิถีชีวิตแบบสโลว์ไลฟ์ โดยภายในบริเวณหมู่บ้านแม่กำปอง มีทั้งคาเฟ่ และร้านอาหารท้องถิ่นที่มาพร้อมวิวทิวทัศน์สุดอลังการ</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-12 mb-4">
+                        <div class="card">
+                            <img src="https://www.chillpainai.com/src/wewakeup/scoop/images/dca1f3f07bb5e9a373ca158f38e86d0975de6ca7.jpg" alt="บ้านข้างวัด" class="card-img-top">
+                            <div class="card-body">
+                                <h5 class="card-title">บ้านข้างวัด</h5>
+                                <p>ชุมชนเก่าแก่สไตล์ล้านนาที่ตั้งอยู่ในย่านชุมชนวัดร่ำเปิงที่ต้องการให้ผู้คนได้ใช้ชีวิตอย่างถ้อยทีถ้อยอาศัยกัน ภายในจะมีทั้งคาเฟ่, Craft Studio สตูดิโอเวิร์กช็อปงานศิลปะอย่างภาพวาดสีน้ำ, ปั้นเซรามิก ฯลฯ รวมทั้งแกลลอรี่แสดงผลงานศิลปะต่าง ๆ</p>
+                            </div>
+                        </div>
+                    </section>
+                </main>
+                
+    <footer class="mt-5" style="background-color: #FF69B4; color: white; padding: 40px 0;">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3">
+                    <h5 class="font-weight-bold mb-3">ข้อมูลติดต่อ</h5>
+                    <ul class="list-unstyled">
+                        <li>อีเมล: 66160253@go.buu.ac.th</li>
+                        <li>โทร: 061-157-7211</li>
+                        <li>ที่อยู่: 477 บางแสนสุขมากอิอิ</li>
+                    </ul>
+                </div>
+    
+                <div class="col-md-3">
+                    <h5 class="font-weight-bold mb-3">ลิงก์สำคัญ</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="text-white text-decoration-none">หน้าแรก</a></li>
+                        <li><a href="#about" class="text-white text-decoration-none">รายละเอียดสถานที่ท่องเที่ยว</a></li>
+                        <li><a href="#contact" class="text-white text-decoration-none">ติดตามเรา</a></li>
+                    </ul>
+                </div>
+    
+                <div class="col-md-3">
+                    <h5 class="font-weight-bold mb-3">ติดตามเรา</h5>
+                    <div class="d-flex">
+                        <a href="#" class="text-white text-decoration-none me-4">Twitter</a>
+                        <a href="#" class="text-white text-decoration-none me-4">Facebook</a>
+                        <a href="#" class="text-white text-decoration-none">Instagram</a>
+                    </div>
+                </div>
+    
+                <div class="col-md-3 text-center text-md-end">
+                    <p class="mb-0">&copy; 2024 จังหวัดน่าเที่ยว | 66160253 Pathamaporn W.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
