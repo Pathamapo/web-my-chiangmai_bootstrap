@@ -17,26 +17,47 @@
                         <button type="submit" class="btn btn-primary rounded-end">ค้นหา</button>
                     </div>
                 </form>
-            <nav class="navbar navbar-expand-lg navbar-light mt-3">
-                <div class="container">
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu" aria-controls="navMenu" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse justify-content-end" id="navMenu">
-                        <ul class="navbar-nav">
-                            <li class="nav-item">
-                                <a href="index.html" class="nav-link text-dark fw-bold border rounded px-4 py-2 bg-light">หน้าหลัก</a>
-                            </li>
-                            <li class="nav-item">
-                                <a href="about.html" class="nav-link text-dark fw-bold border rounded px-4 py-2 bg-light">รายละเอียดสถานที่ท่องเที่ยว</a>
-                            </li>
-                            <li class="nav-item">
-                                <a href="contact.html" class="nav-link text-dark fw-bold border rounded px-4 py-2 bg-light">ติดต่อ</a>
-                            </li>
-                        </ul>
+                <nav class="navbar navbar-expand-lg navbar-light bg-pink shadow-sm mt-3">
+                    <div class="container">
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu" aria-controls="navMenu" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse justify-content-end" id="navMenu">
+                            <ul class="navbar-nav">
+                                <li class="nav-item">
+                                    <a href="index.html" class="nav-link text-dark fw-bold px-4 py-2 bg-light rounded-pill transition-all duration-300 hover-effect">หน้าหลัก</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="about.html" class="nav-link text-dark fw-bold px-4 py-2 bg-light rounded-pill transition-all duration-300 hover-effect">รายละเอียดสถานที่ท่องเที่ยว</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="contact.html" class="nav-link text-dark fw-bold px-4 py-2 bg-light rounded-pill transition-all duration-300 hover-effect">ติดต่อ</a>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
-                </div>
-            </nav>  
+                </nav>
+                
+                <style>
+                    .bg-pink {
+                        background-color: #FF69B4; 
+                    }
+                
+                    .hover-effect:hover {
+                        background-color: #ff1493; 
+                        color: white; 
+                        transform: scale(1.1); 
+                        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); 
+                    }
+                
+                    .transition-all {
+                        transition: all 0.3s ease;
+                    }
+                
+                    .navbar-nav .nav-item .nav-link {
+                        font-size: 1rem; 
+                    }
+                </style>
         </header>
 </head>
 <body>
