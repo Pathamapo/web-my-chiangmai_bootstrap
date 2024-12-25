@@ -1,1 +1,58 @@
 # web-my-chiangmai_bootstrap
+ - git clone https://github.com/Pathamapo/web-my-chiangmai.git
+ - git checkout -b development
+ - git add .
+ - git commit -m "สรางโครงสรางโปรเจคเรมตน"
+ - git checkout -b feature/home-page
+ - git add .
+ - git commit -m "สร้างหน้า Home พื้นฐาน" 
+ - git checkout development
+ - git checkout -b feature/about-page
+ - git add .
+ - git commit -m "สร้างหน้าabout พื้นฐาน"
+ - git checkout development
+ - git checkout -b feature/contact-page
+ - git add .
+ - git commit -m "สร้างหน้า contact พื้นฐาน"
+ - git checkout development
+ - git merge feature/home-page
+ - git merge feature/home-page
+ - git merge feature/contact-page
+ - git add .
+ - git commit -m "เพิ่มHamburger"
+ - git add .
+ - git commit -m "เพิ่มปุ่มค้นหา"
+ - git add .
+ - git commit -m "เพิ่มbootstrap"
+ - git add .
+ - git commit -m "เพิ่มHamburger"
+ - git add .
+ - git commit -m "แก้ไขปุ่ม"
+ - git add .
+ - git commit -m "แก้ไขไฮไลต์"
+ - git add .
+ - git commit -m "แก้ไขเมนู"  
+ - git add .
+ - git commit -m "แก้ไขเมนูทุกหน้า"
+ - git add .
+ - git commit -m "แก้ไขปุ้มค้นหา"  
+ - git add .
+ - git commit -m "แก้ไขหน้ารายละเอียด"
+ - git add .
+ - git commit -m "แก้ไขคอลัมม์" 
+ - git add .
+ - git commit -m "แก้ไขหน้าติดต่อ"
+ - git add .
+ - git commit -m "แก้ไขHamburger"
+ - git add .
+ -  git commit -m "แก้ไขfooter"
+ - git add .
+ - git commit -m "แก้ไขfooterหน้าติดต่อ"
+ - git add .
+ - git commit -m "แก้ไขหน้า" 
+ - git add .
+ - git commit -m "เพิ่มpdf
+ - git add README.md
+ - git commit -m "comment"
+ - git push
+ 
